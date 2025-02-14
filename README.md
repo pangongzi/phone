@@ -92,4 +92,3 @@ https://github.com/xluohome/phonedata
 
 ### 交流
 ![wechat.jpg](https://github.com/pangongzi/phone/wechat.jpg)
-![wechat.jpg](./wechat.jpg)
