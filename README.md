@@ -91,4 +91,4 @@ https://github.com/xluohome/phonedata
 
 
 ### 交流
-![wechat.jpg](https://github.com/pangongzi/phone/wechat.jpg)
+[![wechat.jpg](https://i.postimg.cc/hvvW2WWw/wechat.jpg)](https://postimg.cc/S2BvKPK7)
