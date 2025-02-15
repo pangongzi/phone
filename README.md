@@ -2,12 +2,13 @@
 
 
 ## 项目描述
-dat 文件信息，由于新号码段出现，原作者的数据没有覆盖到，着手自己手动更新数据。
+dat 文件信息，由于新号码段出现，原作者的数据没有覆盖到，着手自己手动更新了数据。  
 为了配套使用，写了一个php composer 包(已发布)，方便使用。
 - 归属地信息库文件大小：4557kb
 - 归属地信息库最后更新：2025年02月
 - 手机号段记录条数：517258
 
+如果你只要dat文件，在目录 [src/data/phone.dat](https://github.com/pangongzi/phone/raw/refs/heads/master/src/data/phone.dat)
 
 ## 安装
 
