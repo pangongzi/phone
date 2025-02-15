@@ -3,6 +3,7 @@
 
 ## 项目描述
 dat 文件信息，由于新号码段出现，原作者的数据没有覆盖到，着手自己手动更新数据。
+为了配套使用，写了一个php composer 包(已发布)，方便使用。
 - 归属地信息库文件大小：4557kb
 - 归属地信息库最后更新：2025年02月
 - 手机号段记录条数：517258
@@ -109,14 +110,14 @@ python:
 https://github.com/ls0f/phone
 
 php:  
-https://github.com/shitoudev/phone-location 
+https://github.com/shitoudev/phone-location  
 https://github.com/iwantofun/php_phone
 
 php ext:     
 https://github.com/jonnywang/phone
 
 Java:   
-https://github.com/fengjiajie/phone-number-geo 
+https://github.com/fengjiajie/phone-number-geo  
 https://github.com/EeeMt/phone-number-geo
 
 Node:   
@@ -147,5 +148,5 @@ https://github.com/xluohome/phonedata
 
 
 ### 交流
-加作者微信
+加作者微信  
 [![wechat.jpg](https://i.postimg.cc/hvvW2WWw/wechat.jpg)](https://postimg.cc/S2BvKPK7)
