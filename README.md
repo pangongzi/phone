@@ -7,6 +7,62 @@ dat 文件信息，由于新号码段出现，原作者的数据没有覆盖到�
 - 归属地信息库最后更新：2025年02月
 - 手机号段记录条数：517258
 
+
+## 安装
+
+使用 Composer 安装：
+
+```bash
+composer require pangongzi/phone
+
+```
+使用方法
+初始化
+首先，需要引入自动加载文件并实例化 PhoneLocation 类：
+```
+<?php
+require 'vendor/autoload.php';
+
+use Pangongzi\Phone\PhoneLocation;
+
+$phoneLocation = PhoneLocation::getInstance();
+```
+查询手机号码归属地
+使用 find 方法查询手机号码的归属地信息：
+```
+<?php
+$phone = '13800138000';
+$result = $phoneLocation->find($phone);
+
+if ($result !== null) {
+    echo "省份: " . $result['province'] . PHP_EOL;
+    echo "城市: " . $result['city'] . PHP_EOL;
+    echo "邮政编码: " . $result['zip_code'] . PHP_EOL;
+    echo "区号: " . $result['area_code'] . PHP_EOL;
+    echo "运营商: " . $result['type_str'] . PHP_EOL;
+} else {
+    echo "未找到归属地信息" . PHP_EOL;
+}
+```
+返回结果示例
+```
+<?php
+Array
+(
+    [province] => 浙江
+    [city] => 嘉兴
+    [zip_code] => 314000
+    [area_code] => 0573
+    [type] => 1
+    [type_str] => 移动
+    [phone] => 13800138000
+    [info] => 13800138000|1|浙江|嘉兴|314000|0573
+)
+```
+
+
+
+
 ## 出处和说明
 基于github开源库
 作者: [https://github.com/ls0f](https://markdown.com.cn)<br>
@@ -91,4 +147,5 @@ https://github.com/xluohome/phonedata
 
 
 ### 交流
+加作者微信
 [![wechat.jpg](https://i.postimg.cc/hvvW2WWw/wechat.jpg)](https://postimg.cc/S2BvKPK7)
