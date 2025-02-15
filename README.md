@@ -28,6 +28,13 @@ require 'vendor/autoload.php';
 use Pangongzi\Phone\PhoneLocation;
 
 $phoneLocation = PhoneLocation::getInstance();
+
+or
+
+// 自定义dat文件
+$dat = 'xxxx/phone.dat';
+$phoneLocation = PhoneLocation::getInstance($dat);
+
 ```
 查询手机号码归属地
 使用 find 方法查询手机号码的归属地信息：

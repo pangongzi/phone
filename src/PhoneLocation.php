@@ -64,11 +64,13 @@ class PhoneLocation
 
 
 
-  public function __construct()
+  public function __construct($dat = '')
   {
+    $dat = !empty($dat) ? $dat : self::DATA_FILE;
+
     // 判断存在
-    if (!file_exists(self::DATA_FILE)) {
-      throw new \Exception("Data file not found: " . self::DATA_FILE);
+    if (!file_exists($dat)) {
+      throw new \Exception("Data file not found: $dat");
     }
 
     // 方式1、打开文件 discard
@@ -79,7 +81,7 @@ class PhoneLocation
 
 
     // 方式2、直接读取整个文件到内存
-    $this->_data = file_get_contents(self::DATA_FILE);
+    $this->_data = file_get_contents($dat);
 
     // 大小
     // $this->_fileSize = filesize(self::DATA_FILE);
@@ -98,10 +100,10 @@ class PhoneLocation
 
 
   // 单列 模式
-  public static function getInstance()
+  public static function getInstance($dat = '')
   {
     if (self::$instance === null) {
-      self::$instance = new self();
+      self::$instance = new self($dat);
     }
     return self::$instance;
   }
