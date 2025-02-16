@@ -2,7 +2,7 @@
 
 
 ## 项目描述
-dat 文件信息，由于新号码段出现，原作者的数据没有覆盖到，着手自己手动更新了数据。  
+dat 文件信息，由于新号码段出现，原作者的数据没有覆盖到，自己着手手动更新了数据。  
 为了配套使用，写了一个php composer 包(已发布)，方便使用。
 - 归属地信息库文件大小：4557kb
 - 归属地信息库最后更新：2025年02月
@@ -15,7 +15,12 @@ dat 文件信息，由于新号码段出现，原作者的数据没有覆盖到�
 使用 Composer 安装：
 
 ```bash
+# 安装
 composer require pangongzi/phone
+
+
+# 删除
+composer remove pangongzi/phone
 
 ```
 使用方法
@@ -31,8 +36,7 @@ $phoneLocation = PhoneLocation::getInstance();
 
 or
 
-// 自定义dat文件
-$dat = 'xxxx/phone.dat';
+$dat = 'xxxx/phone.dat'; // 自定义dat文件
 $phoneLocation = PhoneLocation::getInstance($dat);
 
 ```
@@ -53,7 +57,7 @@ if ($result !== null) {
     echo "未找到归属地信息" . PHP_EOL;
 }
 ```
-返回结果示例
+返回结果示例(完整)
 ```
 <?php
 Array
@@ -118,6 +122,7 @@ python:
 https://github.com/ls0f/phone
 
 php:  
+https://packagist.org/packages/pangongzi/phone  
 https://github.com/shitoudev/phone-location  
 https://github.com/iwantofun/php_phone
 

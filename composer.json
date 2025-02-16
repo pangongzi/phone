@@ -2,7 +2,7 @@
   "name": "pangongzi/phone",
   "description": "location of phone number | phone.dat updated",
   "type": "library",
-  "version": "2025.02.15", // 这里指定了当前包的版本号
+  "version": "2025.02.15",
   "require": {
     "php": ">=7.3"
   },
