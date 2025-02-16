@@ -18,6 +18,8 @@ dat 文件信息，由于新号码段出现，原作者的数据没有覆盖到�
 # 安装
 composer require pangongzi/phone
 
+# 更新
+composer update pangongzi/phone
 
 # 删除
 composer remove pangongzi/phone
@@ -77,8 +79,8 @@ Array
 
 
 ## 出处和说明
-基于github开源库
-作者: [https://github.com/ls0f/phone](https://github.com/ls0f/phone)<br>
+基于github开源库  
+作者: [https://github.com/ls0f/phone](https://github.com/ls0f/phone)  
 记录条数：499527 (updated:2023年12月)
 
 ### 文件格式
@@ -122,7 +124,7 @@ python:
 https://github.com/ls0f/phone
 
 php:  
-https://packagist.org/packages/pangongzi/phone  
+https://github.com/pangongzi/phone
 https://github.com/shitoudev/phone-location  
 https://github.com/iwantofun/php_phone
 
