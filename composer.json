@@ -2,7 +2,6 @@
   "name": "pangongzi/phone",
   "description": "location of phone number | phone.dat updated",
   "type": "library",
-  "version": "2025.02.16",
   "require": {
     "php": ">=7.3"
   },
@@ -31,6 +30,7 @@
   ],
   "homepage": "https://github.com/pangongzi/phone",
   "keywords": [
+    "php",
     "phone",
     "location",
     "dat",
