@@ -78,7 +78,7 @@ Array
 
 ## 出处和说明
 基于github开源库
-作者: [https://github.com/ls0f](https://markdown.com.cn)<br>
+作者: [https://github.com/ls0f/phone](https://github.com/ls0f/phone)<br>
 记录条数：499527 (updated:2023年12月)
 
 ### 文件格式
