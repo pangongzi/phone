@@ -164,5 +164,7 @@ https://github.com/xluohome/phonedata
 
 
 ### 交流
-加作者微信  
+email | 邮件　pangongzi1989@gmail.com  
+
+wechat | 微信  
 [![wechat.jpg](https://i.postimg.cc/hvvW2WWw/wechat.jpg)](https://postimg.cc/S2BvKPK7)
