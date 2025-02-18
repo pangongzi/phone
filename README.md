@@ -1,7 +1,7 @@
 # 手机号码归属地信息库、手机号归属地查询
 
 
-## 项目描述
+### 项目描述
 dat 文件信息，由于新号码段出现，原作者的数据没有覆盖到，自己着手手动更新了数据。  
 为了配套使用，写了一个php composer 包(已发布)，方便使用。
 - 归属地信息库文件大小：4557kb
@@ -10,7 +10,7 @@ dat 文件信息，由于新号码段出现，原作者的数据没有覆盖到�
 
 如果你只要dat文件，在目录 [src/data/phone.dat](https://github.com/pangongzi/phone/raw/refs/heads/master/src/data/phone.dat)
 
-## 安装
+### 安装
 
 使用 Composer 安装：
 
@@ -28,7 +28,7 @@ composer remove pangongzi/phone
 使用方法
 初始化
 首先，需要引入自动加载文件并实例化 PhoneLocation 类：
-```
+```php
 <?php
 require 'vendor/autoload.php';
 
@@ -40,11 +40,11 @@ or
 
 $dat = 'xxxx/phone.dat'; // 自定义dat文件
 $phoneLocation = PhoneLocation::getInstance($dat);
-
 ```
+
 查询手机号码归属地
 使用 find 方法查询手机号码的归属地信息：
-```
+```php
 <?php
 $phone = '13800138000';
 $result = $phoneLocation->find($phone);
@@ -59,8 +59,9 @@ if ($result !== null) {
     echo "未找到归属地信息" . PHP_EOL;
 }
 ```
+
 返回结果示例(完整)
-```
+```php
 <?php
 Array
 (
@@ -78,7 +79,7 @@ Array
 
 
 
-## 出处和说明
+### 出处和说明
 基于github开源库  
 作者: [https://github.com/ls0f/phone](https://github.com/ls0f/phone)  
 记录条数：499527 (updated:2023年12月)
@@ -114,9 +115,9 @@ Array
 
 
 ### 安全保证
-- 1.由于2019年11月携号转网已开始实行，手机号的运营商可能与实际不符，请谨慎将运营商信息用于重要的业务上。
-- 2.手机号归属地信息是通过网上公开数据进行收集整理。
-- 3.对手机号归属地信息数据的不绝对保证正确。因此在生产环境使用前请您自行校对测试。
+- 由于2019年11月携号转网已开始实行，手机号的运营商可能与实际不符，请谨慎将运营商信息用于重要的业务上。
+- 手机号归属地信息是通过网上公开数据进行收集整理。
+- 对手机号归属地信息数据的不绝对保证正确。因此在生产环境使用前请您自行校对测试。
 
 ### 语言实现
 

@@ -1,12 +1,56 @@
-*.phar
-*.zip
-build/artifacts
-phpunit.xml
-phpunit.functional.xml
-.DS_Store
-.swp
-.build
+# 忽略 Composer 的依赖目录
+/vendor/
+
+# 忽略 Composer 的锁文件
 composer.lock
-vendor
-src/package.xml
-.idea/
+
+# 忽略 IDE 配置文件
+/.idea/
+/.vscode/
+/.vs/
+
+# 忽略操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 忽略本地环境配置文件
+.env
+.env.local
+.env.*.local
+
+# 忽略日志文件
+*.log
+
+# 忽略缓存文件
+*.cache
+
+# 忽略测试生成的临时文件
+/tests/_output/
+/tests/_support/_generated/
+
+# 忽略 PHPUnit 的缓存文件
+.phpunit.result.cache
+
+# 忽略 Composer 的缓存目录
+/.composer/
+
+# 忽略 PHP 生成的临时文件
+.php_cs.cache
+
+# 忽略 build 目录
+/build/
+
+# 忽略 coverage 报告
+/coverage/
+
+# 忽略 npm 或 yarn 的依赖目录
+/node_modules/
+
+# 忽略前端构建文件
+/public/build/
+/public/bundles/
+
+# 忽略其他可能的临时文件
+*.tmp
+*.swp
+*.swo

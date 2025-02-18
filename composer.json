@@ -5,6 +5,7 @@
   "require": {
     "php": ">=7.3"
   },
+  "license": "MIT",
   "autoload": {
     "psr-4": {
       "Pangongzi\\Phone\\": "src/"
@@ -18,9 +19,6 @@
   "require-dev": {
     "phpunit/phpunit": "^9.5"
   },
-  "minimum-stability": "stable",
-  "prefer-stable": true,
-  "license": "MIT",
   "authors": [
     {
       "name": "pangongzi",
@@ -28,12 +26,14 @@
       "homepage": "https://i.postimg.cc/hvvW2WWw/wechat.jpg"
     }
   ],
+  "minimum-stability": "stable",
   "homepage": "https://github.com/pangongzi/phone",
   "keywords": [
     "php",
     "phone",
     "location",
     "dat",
-    "phone.dat"
+    "phone.dat",
+    "手机号归属地"
   ]
 }
