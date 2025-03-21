@@ -26,6 +26,10 @@
       "homepage": "https://i.postimg.cc/hvvW2WWw/wechat.jpg"
     }
   ],
+  "config": {
+    "preferred-install": "dist",
+    "optimize-autoloader": true
+  },
   "minimum-stability": "stable",
   "homepage": "https://github.com/pangongzi/phone",
   "keywords": [

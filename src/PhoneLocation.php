@@ -111,16 +111,16 @@ class PhoneLocation
 
   /**
    * 查找单个手机号码归属地信息
-   * @param string $phone 手机号码
+   * @param string|number $phone 手机号码
    * @return array|null 归属地信息
    * @throws \Exception 如果文件读取失败或手机号格式不正确
    */
-  public function find(string $phone)
+  public function find($phone='')
   {
-    // 检查手机号码长度是否为 11 位  || 检查手机号码是否只包含数字字符。
-    // if (empty($phone) || strlen($phone) !== 11 || !ctype_digit($phone)) {
-    //   return null;
-    // }
+
+    if (empty($phone)) {
+      return null;
+    }
 
     // 检查手机号码长度是否为 11 位  || 检查手机号码是否只包含数字字符。
     if (!preg_match('/^\d{11}$/', $phone)) {
