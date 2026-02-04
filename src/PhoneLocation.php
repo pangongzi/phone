@@ -43,10 +43,10 @@ class PhoneLocation
   private $_mmap = null;
 
   // dat 数据文件的大小
-  private  $_fileSize = 0;
+  private $_fileSize = 0;
 
   // 归属地信息
-  private  $_item = null;
+  private $_item = null;
 
   // 使用 file_get_contents() 替代 mmap()
   // file_get_contents() 会一次性读取整个文件到内存，
@@ -60,7 +60,7 @@ class PhoneLocation
   private string $_phone;
 
   // 单列模式
-  private static  $instance = null;
+  private static $instance = null;
 
 
 
@@ -115,7 +115,7 @@ class PhoneLocation
    * @return array|null 归属地信息
    * @throws \Exception 如果文件读取失败或手机号格式不正确
    */
-  public function find($phone='')
+  public function find($phone = '')
   {
 
     if (empty($phone)) {
@@ -171,18 +171,25 @@ class PhoneLocation
   {
     // string 转 array
     $itemArr = explode('|', $itemStr);
+    $type_str = self::TYPE_LISTS[$type] ?? '';
 
     // 返回值
-    return [
+    $data = [
+      'phone' => $this->_phone,
+      'type' => $type ?? '',
+      'type_str' => $type_str,
       'province' => $itemArr[0] ?? '',
       'city' => $itemArr[1] ?? '',
       'zip_code' => $itemArr[2] ?? '',
-      'area_code' => $itemArr[3] ?? '',
-      'type' => $type ?? '',
-      'type_str' => self::TYPE_LISTS[$type] ?? '',
-      'phone' => $this->_phone,
-      'info' => implode('|', [$this->_phone, $type, $itemStr]),
+      'area_code' => $itemArr[3] ?? ''
     ];
+
+    $filteredData = array_filter($data, function ($key) {
+      return $key !== 'phone';
+    }, ARRAY_FILTER_USE_KEY);
+
+    $data['info'] = implode(' | ', $filteredData);
+    return $data;
   }
 
 
